@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10 - Bootstrap 5 Complete Showcase</title>
+    <!-- Bootstrap 5 CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+
+    <!-- ================= QUESTION 1: Company Landing Page ================= -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">StartupTech</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        
+        <!-- Hero Section -->
+        <section class="bg-white text-center py-5 rounded shadow-sm mb-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold">Build Your Future Faster</h1>
+                    <p class="lead text-muted my-4">Empowering modern startups with scalable solutions and cutting-edge design tools.</p>
+                    <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= QUESTION 2: Personal Portfolio Basics ================= -->
+        <section class="bg-white text-center p-5 rounded shadow-sm mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <img src="https://via.placeholder.com/150" alt="Profile" class="img-fluid rounded-circle mb-3 shadow">
+                    <h2 class="fw-bold mt-3">Nitya Pandey</h2>
+                    <p class="text-muted mb-3">Full Stack Web Developer & UI/UX Enthusiast</p>
+                    <div class="d-flex justify-content-center gap-2 mb-4">
+                        <a href="#" class="btn btn-dark">Hire Me</a>
+                        <a href="#" class="btn btn-outline-dark">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= QUESTION 3: Product Catalog (Grid System) ================= -->
+        <section class="mb-5">
+            <h2 class="text-center fw-bold mb-4">Featured Products</h2>
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 shadow-sm product-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Wireless Headphones</h5>
+                            <p class="card-text text-muted">$99.00</p>
+                            <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 shadow-sm product-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Smart Watch</h5>
+                            <p class="card-text text-muted">$149.00</p>
+                            <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 shadow-sm product-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Minimalist Backpack</h5>
+                            <p class="card-text text-muted">$59.00</p>
+                            <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-3">
+                    <div class="card h-100 shadow-sm product-card">
+                        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Portable Speaker</h5>
+                            <p class="card-text text-muted">$79.00</p>
+                            <button class="btn btn-outline-primary mt-auto">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= QUESTION 4: Restaurant Menu Page ================= -->
+        <section class="mb-5">
+            <h2 class="text-center fw-bold mb-3">Today's Menu</h2>
+            <p class="text-center lead text-muted mb-4">Discover our freshly prepared dishes crafted with authentic ingredients.</p>
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+                    <div class="card shadow-sm p-4 h-100">
+                        <h3 class="mb-4">Full Menu List</h3>
+                        <table class="table table-hover align-middle">
+                            <thead class="table-dark">
+                                <tr><th>Item</th><th>Category</th><th class="text-end">Price</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Margherita Pizza</td><td>Main Course</td><td class="text-end">$12.99</td></tr>
+                                <tr><td>Caesar Salad</td><td>Starter</td><td class="text-end">$8.50</td></tr>
+                                <tr><td>Tiramisu</td><td>Dessert</td><td class="text-end">$6.00</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white fw-bold">Chef's Specials</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">🔥 Truffle Pasta - $18.99</li>
+                            <li class="list-group-item">🥗 Grilled Salmon Salad - $15.50</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= QUESTION 5: Custom Themed Blog Homepage ================= -->
+        <section class="mb-5">
+            <h2 class="text-center fw-bold mb-4">DevInsights Blog</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 custom-card">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Bootstrap 5</span>
+                            <h3 class="card-title h4">Mastering Utility Classes</h3>
+                            <p class="card-text text-muted">Learn how spacing and flex utilities speed up UI development.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm border-0 custom-card">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">CSS Variables</span>
+                            <h3 class="card-title h4">The Power of Custom Theming</h3>
+                            <p class="card-text text-muted">Discover how to override Bootstrap design tokens.</p>
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= QUESTION 6: Notifications Dashboard ================= -->
+        <section class="mb-5">
+            <h2 class="text-center fw-bold mb-4">User Dashboard</h2>
+            <div class="p-4 mb-4 bg-white border rounded shadow-sm">
+                <h5 class="text-muted mb-2">Account Summary</h5>
+                <p class="mb-0">Welcome back, Nitya! You have 3 unread notifications.</p>
+            </div>
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-dark text-white fw-bold">Recent Notifications</div>
+                <div class="card-body">
+                    <div class="alert alert-success" role="alert">🎉 Success! Profile updated successfully.</div>
+                    <div class="alert alert-info" role="alert">💡 Tip: Connect your GitHub account.</div>
+                    <div class="alert alert-danger" role="alert">⚠️ Warning: Password was changed 6 months ago.</div>
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Notice:</strong> Scheduled maintenance this Sunday.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= QUESTION 7: Task Tracker with Badges ================= -->
+        <section class="mb-5">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Task Manager</h5>
+                    <span class="badge bg-light text-dark fs-6">3 Pending</span>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <span>Complete Bootstrap Assignment</span>
+                        <span class="badge bg-danger">High Priority</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+                        <span>Review Node.js Module</span>
+                        <span class="badge bg-warning text-dark">Medium Priority</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= QUESTION 8: Pricing Plans ================= -->
+        <section class="mb-5">
+            <h2 class="text-center fw-bold mb-4">Choose Your Plan</h2>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 text-center">
+                        <h4>Starter</h4>
+                        <h2 class="display-5 fw-bold my-3">$9<span class="fs-6 text-muted">/mo</span></h2>
+                        <ul class="list-unstyled mb-4 text-muted">
+                            <li class="mb-2">1 Website</li>
+                            <li class="mb-2">10 GB Storage</li>
+                        </ul>
+                        <button class="btn btn-outline-dark mt-auto">Choose Starter</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-lg border-primary p-4 text-center">
+                        <span class="badge bg-primary mb-2">Most Popular</span>
+                        <h4>Pro</h4>
+                        <h2 class="display-5 fw-bold my-3 text-primary">$29<span class="fs-6 text-muted">/mo</span></h2>
+                        <ul class="list-unstyled mb-4 text-muted">
+                            <li class="mb-2">5 Websites</li>
+                            <li class="mb-2">100 GB Storage</li>
+                        </ul>
+                        <button class="btn btn-primary mt-auto">Choose Pro</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 text-center">
+                        <h4>Enterprise</h4>
+                        <h2 class="display-5 fw-bold my-3">$79<span class="fs-6 text-muted">/mo</span></h2>
+                        <ul class="list-unstyled mb-4 text-muted">
+                            <li class="mb-2">Unlimited Websites</li>
+                            <li class="mb-2">1 TB Storage</li>
+                        </ul>
+                        <button class="btn btn-outline-dark mt-auto">Choose Enterprise</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= QUESTION 9: Blog Pagination & Pager ================= -->
+        <section class="mb-5">
+            <nav aria-label="Page navigation" class="mb-3">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+            <div class="d-flex justify-content-between col-md-8 mx-auto">
+                <a href="#" class="btn btn-outline-secondary">&larr; Older Posts</a>
+                <a href="#" class="btn btn-outline-secondary disabled">Newer Posts &rarr;</a>
+            </div>
+        </section>
+
+        <!-- ================= QUESTION 10: Travel Agency Carousel & Progress ================= -->
+        <section class="mb-5">
+            <div id="destinationCarousel" class="carousel slide shadow rounded overflow-hidden mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="https://via.placeholder.com/1200x400/343a40/ffffff?text=Explore+Bali" class="d-block w-100" alt="Bali">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="https://via.placeholder.com/1200x400/495057/ffffff?text=Swiss+Alps" class="d-block w-100" alt="Alps">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card shadow-sm border-0 p-4">
+                <h5 class="mb-3">Seasonal Travel Booking Progress</h5>
+                <div class="progress" style="height: 25px;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success fw-bold" role="progressbar" style="width: 70%;">70% Booked</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p class="mb-0">&copy; 2026 StartupTech & Travel Agency. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
