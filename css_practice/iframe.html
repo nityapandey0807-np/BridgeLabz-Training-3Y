@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Question 20: Complete Head Elements -->
+    <meta charset="UTF-8"> <!-- Question 5 & 20: UTF-8 encoding -->
+    <meta name="description" content="Assignment 3 - All 20 Questions Combined HTML">
+    <meta name="author" content="Nitya Pandey">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://example.com/">
+    <title>Assignment 3 - All Questions Combined</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* Empty style placeholder as requested */
+    </style>
+    <script>
+        /* Empty script placeholder as requested */
+    </script>
+</head>
+<body>
+
+    <h1>Assignment 3: HTML iFrames, Forms, and Elements</h1>
+    <hr>
+
+    <!-- ================= QUESTON 1 ================= -->
+    <section>
+        <h2>1. YouTube Video Embed</h2>
+        <div style="width: 80%; height: 50vh;">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="100%" height="100%" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 2 ================= -->
+    <section>
+        <h2>2. Google Map Embed</h2>
+        <!-- loading="lazy" attribute defers loading of the iframe until the user scrolls near it, saving bandwidth and improving page load performance -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8...=" 
+            width="400" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            title="Google Map">
+        </iframe>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 3 ================= -->
+    <section>
+        <h2>3. Two Iframes Stacked</h2>
+        <div>
+            <h4>Introduction</h4>
+            <iframe srcdoc="<p>Hello, I am Nitya Pandey, a computer science student.</p>" width="100%" height="150px" title="Introduction"></iframe>
+        </div>
+        <div>
+            <h4>Favorite Hobby</h4>
+            <iframe srcdoc="<p>My favorite hobby is web development and coding.</p>" width="100%" height="150px" title="Hobby"></iframe>
+        </div>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 4 ================= -->
+    <section>
+        <h2>4. Frameset Layout Note</h2>
+        <p><em>(Note: &lt;frameset&gt; and &lt;frame&gt; are deprecated in HTML5. They require a dedicated HTML document structure without a &lt;body&gt; tag.)</em></p>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 5 & 13 ================= -->
+    <section>
+        <h2>5 & 13. UTF-8 Encoding Verification (Multilingual)</h2>
+        <p>English: Hello World | Hindi: नमस्ते दुनिया | Japanese: こんにちは世界 | French: Bonjour le monde</p>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 6 ================= -->
+    <section>
+        <h2>6. User Registration Form</h2>
+        <form>
+            <p><label>Full Name:<br><input type="text" name="fullname" required></label></p>
+            <p><label>Email Address:<br><input type="email" name="email" required></label></p>
+            <p><label>Password:<br><input type="password" name="password" required></label></p>
+            <p><label>Confirm Password:<br><input type="password" name="confirm_password" required></label></p>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 7 ================= -->
+    <section>
+        <h2>7. Login Form with CSRF Token</h2>
+        <form action="/login" method="post">
+            <!-- Hidden input field storing a dummy CSRF token -->
+            <!-- Purpose of a CSRF (Cross-Site Request Forgery) token is to prevent malicious third-party sites from executing unauthorized commands on behalf of an authenticated user. -->
+            <input type="hidden" name="csrf_token" value="dummy_csrf_token_xyz123">
+
+            <p><label>Username:<br><input type="text" name="username" required></label></p>
+            <p><label>Password:<br><input type="password" name="password" required></label></p>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 8 ================= -->
+    <section>
+        <h2>8. Feedback Form</h2>
+        <form action="#" method="post">
+            <p><label>Your Feedback:<br><textarea name="feedback" rows="3" required></textarea></label></p>
+            <p>
+                <label>Rating:</label><br>
+                <input type="radio" id="good" name="rating" value="Good" required> <label for="good">Good</label><br>
+                <input type="radio" id="avg" name="rating" value="Average"> <label for="avg">Average</label><br>
+                <input type="radio" id="poor" name="rating" value="Poor"> <label for="poor">Poor</label>
+            </p>
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 9 ================= -->
+    <section>
+        <h2>9. File Upload Form</h2>
+        <form>
+            <p><label>Choose an image:<br><input type="file" name="fileUpload" accept=".jpg, .png" required></label></p>
+            <p><small>Note: Only .jpg and .png file formats are allowed for upload.</small></p>
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 10 ================= -->
+    <section>
+        <h2>10. Contact Form with Placeholders</h2>
+        <form>
+            <p><label>Full Name:<br><input type="text" name="name" placeholder="Enter your full name" required></label></p>
+            <p><label>Email:<br><input type="email" name="email" placeholder="name@example.com" required></label></p>
+            <p><label>Subject:<br><input type="text" name="subject" placeholder="Topic" required></label></p>
+            <p><label>Message:<br><textarea name="message" rows="3" placeholder="Type your message here..." required></textarea></label></p>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 11 ================= -->
+    <section>
+        <h2>11. Student Information Form</h2>
+        <form>
+            <p><label>Name:<br><input type="text" name="sname" required></label></p>
+            <p><label>Roll Number:<br><input type="text" name="rollno" required></label></p>
+            <p>
+                <label>Course:<br>
+                <select name="course" required>
+                    <option value="" disabled selected>Select Course</option>
+                    <option value="btech_cse">B.Tech CSE</option>
+                    <option value="mca">MCA</option>
+                    <option value="bsc_it">BSc IT</option>
+                </select>
+                </label>
+            </p>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 12 ================= -->
+    <section>
+        <h2>12. HTML Entities</h2>
+        <p>
+            Symbols: &lt; (&lt;), &gt; (&gt;), &amp; (&amp;), &quot; (&quot;), &#39; (&#39;). 
+            Special: Copyright &copy;, Trademark &trade;, Registered &reg;.
+        </p>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 14 ================= -->
+    <section>
+        <h2>14. External Website Iframe Embed</h2>
+        <iframe src="https://www.wikipedia.org" width="100%" height="300px" title="Wikipedia"></iframe>
+        <p>Some websites may not allow embedding for security reasons.</p>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 15 ================= -->
+    <section>
+        <h2>15. Payment Form</h2>
+        <form>
+            <p><label>Cardholder Name:<br><input type="text" name="cardname" required></label></p>
+            <p><label>Card Number:<br><input type="text" name="cardnum" placeholder="1234 5678 9012 3456" required></label></p>
+            <p><label>Expiry Date:<br><input type="text" name="expdate" placeholder="MM/YY" required></label></p>
+            <p><label>CVV:<br><input type="password" name="cvv" maxlength="4" required></label></p>
+            <button type="submit">Pay Now</button>
+        </form>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 16 ================= -->
+    <section>
+        <h2>16. URI Encoding Demo</h2>
+        <p>Click the link below with correctly URI-encoded characters (%20 for spaces, %26 for ampersand):</p>
+        <p><a href="https://example.com/search?query=HTML%20%26%20CSS">Search HTML &amp; CSS</a></p>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 17 ================= -->
+    <section>
+        <h2>17. Form & Result Iframe Communication</h2>
+        <form action="#" target="resultFrame" onsubmit="event.preventDefault(); document.getElementById('resFrame').srcdoc='<h3>Form successfully submitted.</h3>';">
+            <p><label>Enter Text:<br><input type="text" name="data" required></label></p>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <iframe id="resFrame" name="resultFrame" width="100%" height="100px" title="Result Frame"></iframe>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 18 ================= -->
+    <section>
+        <h2>18. Long and Short Quotations</h2>
+        <p>Here is an inspirational passage about persistence:</p>
+        <blockquote cite="https://example.com">
+            "Success is not final; failure is not fatal: It is the courage to continue that counts. Always remember that &lt;perseverance&gt; pays off."
+        </blockquote>
+        <p>As Winston Churchill famously stated, <q>If you're going through hell, keep going.</q></p>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTON 19 ================= -->
+    <section>
+        <h2>19. Form Security Attributes</h2>
+        <!-- autocomplete="off" disables browser caching/autofill of sensitive inputs -->
+        <form autocomplete="off">
+            <p><label>Username:<br><input type="text" name="sec_username" required></label></p>
+            <p><label>Password:<br><input type="password" name="sec_pass" required></label></p>
+            <button type="submit">Submit</button>
+        </form>
+        <p><small><strong>Security Note:</strong> Turning off autocomplete prevents shared or public browsers from storing sensitive user inputs, reducing the risk of unauthorized data exposure.</small></p>
+    </section>
+
+</body>
+</html>
