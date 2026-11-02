@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 - All Questions Combined</title>
+</head>
+<body>
+
+    <h1>Assignment 3: HTML Block and Inline Elements</h1>
+    <hr>
+
+    <!-- ================= QUESTION 1 ================= -->
+    <section>
+        <h2>1. Multi-section Resume Page</h2>
+        <header>
+            <h3>Nitya Pandey</h3>
+            <p>Email: nitya@example.com | Phone: +91 9876543210 | Location: India</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="about">
+                <h4>About Me</h4>
+                <p>Passionate web developer eager to build scalable and user-friendly web applications.</p>
+            </section>
+            <section id="skills">
+                <h4>Skills</h4>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>Node.js & Express</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </section>
+            <section id="projects">
+                <h4>Projects</h4>
+                <ol>
+                    <li><strong>Portfolio Website:</strong> A personal portfolio built using semantic HTML.</li>
+                    <li><strong>Task Manager App:</strong> A dynamic app to manage daily tasks.</li>
+                </ol>
+            </section>
+            <section id="education">
+                <h4>Education</h4>
+                <table border="1">
+                    <thead>
+                        <tr><th>Course</th><th>Institute</th><th>Year</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>B.Tech in Computer Science</td><td>GLA University</td><td>2026</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2026 Nitya Pandey. All rights reserved.</p>
+        </footer>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 2 ================= -->
+    <section>
+        <h2>2. Product Catalog Page</h2>
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr><th>Product Image</th><th>Product Name</th><th>Description</th><th>Price</th><th>Availability</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://via.placeholder.com/100" alt="Wireless Headphones"></td>
+                    <td>Wireless Headphones</td>
+                    <td>High-quality noise-canceling bluetooth headphones.</td>
+                    <td>$99.00</td>
+                    <td>In Stock</td>
+                </tr>
+                <tr>
+                    <td><img src="https://via.placeholder.com/100" alt="Smart Watch"></td>
+                    <td>Smart Watch</td>
+                    <td>Fitness tracker with heart rate monitor.</td>
+                    <td>$149.00</td>
+                    <td>In Stock</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 3 ================= -->
+    <section>
+        <h2>3. Course Registration Form</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <p><label for="c_name">Name:</label><br><input type="text" id="c_name" name="name" required></p>
+                <p><label for="c_email">Email:</label><br><input type="email" id="c_email" name="email" required></p>
+                <p>
+                    <label for="course_sel">Select Course:</label><br>
+                    <select id="course_sel" name="course">
+                        <option value="node">Node.js FullStack</option>
+                        <option value="frontend">Frontend Development</option>
+                        <option value="python">Python Programming</option>
+                    </select>
+                </p>
+                <button type="submit">Register</button>
+            </fieldset>
+        </form>
+        <h4>Available Course Schedules</h4>
+        <table border="1">
+            <thead>
+                <tr><th>Day</th><th>Time</th><th>Instructor</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Monday & Wednesday</td><td>10:00 AM - 12:00 PM</td><td>Dr. Smith</td></tr>
+                <tr><td>Tuesday & Thursday</td><td>02:00 PM - 04:00 PM</td><td>Prof. Johnson</td></tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 4 ================= -->
+    <section>
+        <h2>4. Company Layout Page (Block-level elements)</h2>
+        <header><h3>TechSolutions Inc.</h3></header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h4>About the Company</h4>
+                <p>TechSolutions Inc. provides cutting-edge software development and cloud infrastructure solutions globally.</p>
+            </section>
+            <section>
+                <h4>Services Offered</h4>
+                <ul>
+                    <li>Custom Web Development</li>
+                    <li>Cloud Computing Solutions</li>
+                    <li>UI/UX Design Consulting</li>
+                </ul>
+            </section>
+            <aside>
+                <blockquote>"Innovation distinguishes between a leader and a follower." — CEO, TechSolutions</blockquote>
+            </aside>
+        </main>
+        <footer><p>Email: contact@techsolutions.com | Address: 123 Tech Park, Silicon Valley</p></footer>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 5 ================= -->
+    <section>
+        <h2>5. Nested List Structure (University Hierarchy)</h2>
+        <ul>
+            <li>GLA University
+                <ul>
+                    <li>Department of Computer Science
+                        <ol>
+                            <li>B.Tech CSE
+                                <ul>
+                                    <li>Data Structures</li>
+                                    <li>Algorithms</li>
+                                </ul>
+                            </li>
+                            <li>MCA
+                                <ul>
+                                    <li>Web Technologies</li>
+                                    <li>Database Management</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 6 ================= -->
+    <section>
+        <h2>6. Restaurant Menu Page</h2>
+        <header><h3>The Gourmet Kitchen</h3></header>
+        <nav>
+            <ul>
+                <li><a href="#starters">Starters</a></li>
+                <li><a href="#maincourse">Main Course</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="starters">
+                <h4>Starters</h4>
+                <table border="1">
+                    <tr><th>Dish Name</th><th>Description</th><th>Price</th></tr>
+                    <tr><td>Tomato Soup</td><td>Freshly brewed warm soup</td><td>$5.00</td></tr>
+                </table>
+            </section>
+            <section id="maincourse">
+                <h4>Main Course</h4>
+                <table border="1">
+                    <tr><th>Dish Name</th><th>Description</th><th>Price</th></tr>
+                    <tr><td>Margherita Pizza</td><td>Classic cheese and basil pizza</td><td>$12.00</td></tr>
+                </table>
+            </section>
+            <section id="desserts">
+                <h4>Desserts</h4>
+                <table border="1">
+                    <tr><th>Dish Name</th><th>Description</th><th>Price</th></tr>
+                    <tr><td>Chocolate Brownie</td><td>Served with hot fudge</td><td>$6.00</td></tr>
+                </table>
+            </section>
+        </main>
+        <footer><p>Contact: +1 800 555-FOOD | 45 Food Street, Gourmet City</p></footer>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 7 ================= -->
+    <section>
+        <h2>7. Conference Schedule Page</h2>
+        <h4>Annual Tech Conference 2026</h4>
+        <table border="1">
+            <thead>
+                <tr><th>Session</th><th>Time</th><th>Topic</th><th>Speaker</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Morning</td><td>09:00 AM - 11:00 AM</td><td>Introduction to Node.js Architecture</td><td>Alice Smith</td></tr>
+                <tr><td>Afternoon</td><td>01:00 PM - 03:00 PM</td><td>Advanced Asynchronous JavaScript</td><td>Bob Jones</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="4">Note: Schedule is subject to minor changes.</td></tr>
+            </tfoot>
+        </table>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 8 ================= -->
+    <section>
+        <h2>8. Student Report Page</h2>
+        <h4>Greenwood High School</h4>
+        <h5>Student Report Card: Nitya Pandey</h5>
+        <table border="1">
+            <tr><th>Subject</th><th>Marks Obtained</th><th>Maximum Marks</th></tr>
+            <tr><td>Mathematics</td><td>85</td><td>100</td></tr>
+            <tr><td>Physics</td><td>78</td><td>100</td></tr>
+            <tr><td>Chemistry</td><td>90</td><td>100</td></tr>
+            <tr><td>English</td><td>88</td><td>100</td></tr>
+            <tr><td>Computer Science</td><td>95</td><td>100</td></tr>
+            <tr>
+                <td colspan="2"><strong>Total & Percentage</strong></td>
+                <td><strong>436 / 500 (87.2%)</strong></td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 9 ================= -->
+    <section>
+        <h2>9. Travel Destination Page</h2>
+        <header><h3>Top 3 Travel Destinations</h3></header>
+        <main>
+            <article>
+                <h4>1. Bali, Indonesia</h4>
+                <img src="https://via.placeholder.com/300x150" alt="Bali">
+                <p>Known for its volcanic mountains, iconic rice paddies, beaches and coral reefs.</p>
+                <blockquote>"An absolute paradise on earth!" — Travel Weekly</blockquote>
+            </article>
+            <article>
+                <h4>2. Swiss Alps</h4>
+                <img src="https://via.placeholder.com/300x150" alt="Swiss Alps">
+                <p>High-altitude mountain range stretching across Europe with scenic views.</p>
+                <blockquote>"Breathtaking landscapes and skiing experiences." — Alpine Explorer</blockquote>
+            </article>
+            <article>
+                <h4>3. Santorini, Greece</h4>
+                <img src="https://via.placeholder.com/300x150" alt="Santorini">
+                <p>Famous for whitewashed cubiform houses overlooking the Aegean sea.</p>
+                <blockquote>"The sunsets here are truly magical." — Global Traveller</blockquote>
+            </article>
+            <aside>
+                <h4>Travel Tips</h4>
+                <ul>
+                    <li>Always carry a universal power adapter.</li>
+                    <li>Keep digital copies of your passport and ID.</li>
+                    <li>Book accommodations well in advance.</li>
+                </ul>
+            </aside>
+        </main>
+        <footer><p>&copy; 2026 Travel Explorers. All rights reserved.</p></footer>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 10 ================= -->
+    <section>
+        <h2>10. Dropdown-based Selection Page</h2>
+        <form>
+            <p>
+                <label for="country">Country:</label><br>
+                <select id="country" name="country">
+                    <option value="india" selected>India</option>
+                    <option value="usa">USA</option>
+                </select>
+            </p>
+            <p>
+                <label for="state">State:</label><br>
+                <select id="state" name="state">
+                    <option value="up" selected>Uttar Pradesh</option>
+                    <option value="delhi">Delhi</option>
+                </select>
+            </p>
+            <p>
+                <label for="city">City:</label><br>
+                <select id="city" name="city">
+                    <option value="mathura" selected>Mathura</option>
+                    <option value="noida">Noida</option>
+                </select>
+            </p>
+            <p>
+                <label for="tourist">Favorite Tourist Place:</label><br>
+                <select id="tourist" name="tourist">
+                    <option value="taj" selected>Taj Mahal</option>
+                    <option value="qutub">Qutub Minar</option>
+                </select>
+            </p>
+        </form>
+        <p><strong>Selected Summary:</strong> Country: India, State: Uttar Pradesh, City: Mathura, Favorite Place: Taj Mahal.</p>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 11 ================= -->
+    <section>
+        <h2>11. News Layout Page</h2>
+        <header><h3>Global News Daily</h3></header>
+        <nav>
+            <ul>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Politics</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h4>Tech Giants Announce AI Breakthrough</h4>
+                <p><time datetime="2026-03-30">March 30, 2026</time></p>
+                <p>New artificial intelligence models promise faster processing and better contextual comprehension.</p>
+                <a href="#">Source: TechNews</a>
+            </article>
+            <article>
+                <h4>Global Sports Championship Begins</h4>
+                <p><time datetime="2026-03-29">March 29, 2026</time></p>
+                <p>Athletes from over 50 nations have gathered to compete in various track and field events.</p>
+                <a href="#">Source: SportsWire</a>
+            </article>
+            <article>
+                <h4>Renewable Energy Policies Updated</h4>
+                <p><time datetime="2026-03-28">March 28, 2026</time></p>
+                <p>Governments worldwide commit to stronger emission reduction targets over the next decade.</p>
+                <a href="#">Source: WorldNews</a>
+            </article>
+            <aside>
+                <h4>Popular Topics</h4>
+                <ul>
+                    <li>Artificial Intelligence</li>
+                    <li>Space Exploration</li>
+                    <li>Global Economy</li>
+                </ul>
+            </aside>
+        </main>
+        <footer><p>Contact: editor@globalnews.com | &copy; 2026 Global News</p></footer>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 12 ================= -->
+    <section>
+        <h2>12. Quotation Showcase Page</h2>
+        <section>
+            <h4>Quote One</h4>
+            <blockquote>
+                "Be the change that you wish to see in the world."
+                <footer>— <cite>Mahatma Gandhi</cite></footer>
+            </blockquote>
+        </section>
+        <section>
+            <h4>Quote Two</h4>
+            <blockquote>
+                "The future belongs to those who believe in the beauty of their dreams."
+                <footer>— <cite>Eleanor Roosevelt</cite></footer>
+            </blockquote>
+        </section>
+        <section>
+            <h4>Quote Three</h4>
+            <blockquote>
+                "Stay hungry, stay foolish."
+                <footer>— <cite>Steve Jobs</cite></footer>
+            </blockquote>
+        </section>
+        <p>Quotes inspire people by offering timeless wisdom, encouragement, and new perspectives during challenging times.</p>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 13 ================= -->
+    <section>
+        <h2>13. Blog Layout Page</h2>
+        <header><h3>Nitya's Tech Blog</h3></header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h4>My First Blog</h4>
+                <p><time datetime="2026-01-15">January 15, 2026</time></p>
+                <p>Starting my journey into web development has been an exciting and enriching experience.</p>
+                <blockquote>"Every expert was once a beginner."</blockquote>
+            </article>
+            <article>
+                <h4>Things I Learned This Week</h4>
+                <p><time datetime="2026-03-20">March 20, 2026</time></p>
+                <p>This week I focused heavily on semantic HTML5 elements and structured document outlines.</p>
+                <blockquote>"Practice makes progress."</blockquote>
+            </article>
+        </main>
+        <footer><p>Written by Nitya Pandey</p></footer>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 14 ================= -->
+    <section>
+        <h2>14. Movie Database Page</h2>
+        <table border="1">
+            <caption><h4>Top Rated Movies Database</h4></caption>
+            <thead>
+                <tr><th>Movie Name</th><th>Genre</th><th>Year</th><th>IMDB Rating</th><th>Link</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Inception</td>
+                    <td>Sci-Fi</td>
+                    <td>2010</td>
+                    <td>8.8</td>
+                    <td><a href="https://imdb.com" target="_blank">View</a></td>
+                </tr>
+                <tr>
+                    <td>The Dark Knight</td>
+                    <td>Action</td>
+                    <td>2008</td>
+                    <td>9.0</td>
+                    <td><a href="https://imdb.com" target="_blank">View</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <p><small>*Ratings are sourced directly from official IMDB records.</small></p>
+    </section>
+    <hr>
+
+    <!-- ================= QUESTION 15 ================= -->
+    <section>
+        <h2>15. Portfolio Layout Page</h2>
+        <header>
+            <h3>Nitya Pandey</h3>
+            <p>Full Stack Web Developer</p>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#p_about">About Me</a></li>
+                <li><a href="#p_skills">Skills</a></li>
+                <li><a href="#p_projects">Projects</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="p_about">
+                <h4>About Me</h4>
+                <p>Building clean, accessible, and responsive websites using modern web standards.</p>
+                <blockquote>"Code is like humor. When you have to explain it, it’s bad."</blockquote>
+            </section>
+            <section id="p_skills">
+                <h4>Skills</h4>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                </ul>
+            </section>
+            <section id="p_projects">
+                <h4>Projects</h4>
+                <ol>
+                    <li>E-Commerce Storefront</li>
+                    <li>Personal Blog Page</li>
+                </ol>
+            </section>
+            <aside>
+                <h4>Contact Info</h4>
+                <p>Email: nitya@example.com</p>
+                <p>Phone: +91 9876543210</p>
+                <p><a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></p>
+            </aside>
+        </main>
+        <footer><p>&copy; 2026 Nitya Pandey. All rights reserved.</p></footer>
+    </section>
+
+</body>
+</html>
