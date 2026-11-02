@@ -1,0 +1,256 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.main-header, .main-footer {
+    text-align: center;
+    background: #212529;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.main-footer {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.assignment-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.assignment-card h2 {
+    margin-top: 0;
+    color: #0d6efd;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 8px;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Q1: Pseudo-Classes */
+.demo-link {
+    color: #6f42c1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.demo-link:hover { color: #d63384; }
+
+.demo-btn {
+    padding: 8px 16px;
+    background: #198754;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.demo-btn:focus { outline: 3px solid #ffc107; }
+.demo-btn:active { background: #145523; }
+
+.nth-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nth-list li:nth-child(even) {
+    background-color: #fff3cd;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Q2: Tooltip */
+.tooltip-wrapper {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.tooltip-target {
+    font-weight: bold;
+    color: #0d6efd;
+    border-bottom: 1px dashed #0d6efd;
+}
+.tooltip-box {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #343a40;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.tooltip-wrapper:hover .tooltip-box {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Q3: Image Showcase */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+.img-figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.img-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease-in-out, filter 0.4s ease-in-out;
+    border-radius: 8px;
+}
+.img-figure:hover img {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+.img-figure figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+}
+
+/* Q4: Selectors Practice */
+.selector-p {
+    color: #495057;
+    font-style: italic;
+    background: #f8f9fa;
+    padding: 10px;
+    border-left: 4px solid #6f42c1;
+}
+
+/* Q5: Button Collection */
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+.btn-primary { background: #0d6efd; color: white; box-shadow: 0 2px 4px rgba(13,110,253,0.3); }
+.btn-primary:hover { background: #0b5ed7; }
+.btn-secondary { background: #6c757d; color: white; }
+.btn-outline { background: transparent; border: 2px solid #0d6efd; color: #0d6efd; }
+.btn-outline:hover { background: #0d6efd; color: white; }
+.btn-disabled { background: #e9ecef; color: #adb5bd; cursor: not-allowed; }
+
+/* Q6: Animation */
+.animation-stage {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 6px;
+}
+.bouncing-ball {
+    width: 30px;
+    height: 30px;
+    background: #dc3545;
+    border-radius: 50%;
+    animation: bounce 1.5s ease-in-out infinite alternate;
+}
+@keyframes bounce {
+    0% { transform: translateY(-25px); }
+    100% { transform: translateY(25px); }
+}
+
+/* Q7: UI Components */
+.ui-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.search-input, .ui-dropdown {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+.search-input:focus, .ui-dropdown:focus {
+    outline: 2px solid #0d6efd;
+}
+
+/* Q8: Box-Sizing Comparison */
+.box-content-box, .box-border-box {
+    width: 180px;
+    height: 80px;
+    padding: 20px;
+    border: 5px solid #212529;
+    color: white;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.box-content-box {
+    box-sizing: content-box; /* Default */
+    background: #0d6efd;
+}
+.box-border-box {
+    box-sizing: border-box;
+    background: #198754;
+}
+
+/* Q9: Combined Effects */
+.combo-card {
+    background: #6f42c1;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.combo-card:hover {
+    transform: scale(1.08) translateY(-5px);
+    background: #563d7c;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Responsive Media Query */
+@media (max-width: 700px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
